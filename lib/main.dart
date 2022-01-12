@@ -37,7 +37,7 @@ class _StoryPageState extends State<StoryPage> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Expanded(
-                flex: 12,
+                flex: 6,
                 child: Center(
                   child: Text(
                     storyBrain.getStory(),
@@ -48,7 +48,6 @@ class _StoryPageState extends State<StoryPage> {
                 ),
               ),
               Expanded(
-                flex: 2,
                 child: MaterialButton(
                   onPressed: () {
                     setState(() {
@@ -69,7 +68,6 @@ class _StoryPageState extends State<StoryPage> {
                 height: 20.0,
               ),
               Expanded(
-                flex: 2,
                 child: Visibility(
                   visible: storyBrain.buttonShouldBeVisible(),
                   child: MaterialButton(
